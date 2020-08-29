@@ -6,7 +6,7 @@ Interactive debugger for GitHub Actions
 ```
 steps:
 - name: Setup Debug Session
-  uses: csexton/debugger-action@master
+  uses: <github-username>/debugger-action@<branch>
 ```
 
 In the log for the action you will see:
@@ -21,7 +21,7 @@ ssh redactedMxoJ0pXmjredacted@nyc1.tmate.io
 
 Simply follow the instructions and copy the ssh command into your terminal to create an ssh connection the running instance. The session will close immedeatly after closing the ssh connection to the running instance.
 
-There is a global timeout after 15 minutes. This will close any open ssh sessions. To prevent the session from being terminated run:
+There is a global timeout after 30 minutes. This will close any open ssh sessions. To prevent the session from being terminated run:
 
 ```
 touch /tmp/keepalive
